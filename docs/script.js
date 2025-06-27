@@ -578,12 +578,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const groupedBookmarks = {};
     const singleBookmarks = [];
-    const showNames = ["目录",
+    const showNames = [
+        "封面",
+        "扉页",
+        "第7版说明",
+        "目录",
         "音节表",
         "部首检字表",
         "检字表",
+        "难检字笔画索引",
         "西文字母开头的词语",
-        "附录"
+        "附录",
+        "汉语拼音方案",
+        "封底",
     ]
 
     BOOKMARKS.forEach(bookmark => {
