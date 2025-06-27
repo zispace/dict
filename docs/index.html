@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>现代汉语词典（第7版）在线版</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- <h1>词典在线</h1> -->
+        <div class="search-container">
+            <div class="search-box">
+                <img src="logo.png">
+                <input type="text" id="searchInput" placeholder="输入拼音或正文页码后跳转页面..." />
+                <button onclick="searchImage()">搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="result-container">
+        <img id="main-image" src="images/0005.png" alt="Image">
+        <div id="prevBtn" onclick="changeImage(-1)"></div>
+        <div id="nextBtn" onclick="changeImage(1)"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
