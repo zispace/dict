@@ -85,6 +85,11 @@ header h1 {
     background-color: var(--search-color);
 }
 
+#search-result {
+    color: var(--header-color);
+    font-weight: bolder;
+}
+
 .result-container {
     margin: 1rem auto;
     text-align: center;

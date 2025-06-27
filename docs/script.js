@@ -3,7 +3,7 @@ const pinyinMaxIndex = 1854;
 const ignoreMinPage = 5;
 const ignoreMaxPage = 1895;
 const totalImages = 1897; // Total number of images
-let currentImageIndex = ignoreMinPage; // Initial image index
+let currentImageIndex = pinyinIndex; // Initial image index
 
 const BOOKMARKS = [
     { name: "封面", page: 1 },
@@ -504,10 +504,12 @@ function searchImage() {
     }
 
     if (pageNumber !== null && pageNumber > 0 && pageNumber <= totalImages) {
+        document.getElementById("search-result").innerHTML = "";
         currentImageIndex = pageNumber;
         showImage();
     } else {
-        alert("请输入一个有效的拼音或正文页码!");
+        document.getElementById("search-result").innerHTML = "检索的拼音或正文页码无效，请重新输入!";
+        // alert("请输入一个有效的拼音或正文页码!");
     }
 }
 
@@ -559,3 +561,9 @@ function hideButtons() {
 const container = document.querySelector(".result-container");
 container.addEventListener("mouseenter", showButtons);
 container.addEventListener("mouseleave", hideButtons);
+
+document.addEventListener('DOMContentLoaded', function () {
+    // 默认页面
+    showImage()
+});
+

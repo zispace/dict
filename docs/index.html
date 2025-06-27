@@ -16,13 +16,14 @@
             <div class="search-box">
                 <img src="logo.png">
                 <input type="text" id="searchInput" placeholder="输入拼音或正文页码后跳转页面..." />
-                <button onclick="searchImage()">搜索</button>
+                <button onclick="searchImage()">检索</button>
             </div>
+            <div id="search-result"></div>
         </div>
     </header>
 
     <section class="result-container">
-        <img id="main-image" src="images/0005.png" alt="Image">
+        <img id="main-image" alt="Image">
         <div id="prevBtn" onclick="changeImage(-1)"></div>
         <div id="nextBtn" onclick="changeImage(1)"></div>
     </section>
