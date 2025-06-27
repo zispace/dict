@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <header>
         <!-- <h1>词典在线</h1> -->
         <div class="search-container">
@@ -17,10 +18,19 @@
                 <img src="logo.png">
                 <input type="text" id="searchInput" placeholder="输入拼音或正文页码后跳转页面..." />
                 <button onclick="searchImage()">检索</button>
+
+                <button class="sidebar-toggle" id="sidebarToggle">目录</button>
             </div>
             <div id="search-result"></div>
         </div>
     </header>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>简明目录</h3>
+        </div>
+        <div class="sidebar-content" id="bookmarksList"></div>
+    </div>
 
     <section class="result-container">
         <img id="main-image" alt="Image">

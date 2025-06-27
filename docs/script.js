@@ -26,13 +26,13 @@ const BOOKMARKS = [
     { name: "部首检字表", page: 33 },
     { name: "检字表", page: 35 },
     { name: "难检字笔画索引", page: 76 },
-    { name: "a", page: 95 },
+    { name: "A", page: 95 },
     { name: "a", page: 95 },
     { name: "ai", page: 96 },
     { name: "an", page: 100 },
     { name: "ang", page: 106 },
     { name: "ao", page: 107 },
-    { name: "b", page: 110 },
+    { name: "B", page: 110 },
     { name: "ba", page: 110 },
     { name: "bai", page: 116 },
     { name: "ban", page: 126 },
@@ -49,7 +49,7 @@ const BOOKMARKS = [
     { name: "bing", page: 185 },
     { name: "bo", page: 190 },
     { name: "bu", page: 197 },
-    { name: "c", page: 211 },
+    { name: "C", page: 211 },
     { name: "ca", page: 211 },
     { name: "cai", page: 211 },
     { name: "can", page: 216 },
@@ -85,7 +85,7 @@ const BOOKMARKS = [
     { name: "cui", page: 317 },
     { name: "cun", page: 319 },
     { name: "cuo", page: 321 },
-    { name: "d", page: 324 },
+    { name: "D", page: 324 },
     { name: "da", page: 324 },
     { name: "dai", page: 342 },
     { name: "dan", page: 346 },
@@ -109,12 +109,13 @@ const BOOKMARKS = [
     { name: "dui", page: 422 },
     { name: "dun", page: 426 },
     { name: "duo", page: 428 },
+    { name: "E", page: 433 },
     { name: "e", page: 433 },
-    { name: "e", page: 433 },
+    { name: "ê", page: 437 },
     { name: "en", page: 437 },
     { name: "eng", page: 437 },
     { name: "er", page: 437 },
-    { name: "f", page: 443 },
+    { name: "F", page: 443 },
     { name: "fa", page: 443 },
     { name: "fan", page: 450 },
     { name: "fang", page: 460 },
@@ -124,7 +125,7 @@ const BOOKMARKS = [
     { name: "fo", page: 490 },
     { name: "fou", page: 491 },
     { name: "fu", page: 491 },
-    { name: "g", page: 509 },
+    { name: "G", page: 509 },
     { name: "ga", page: 509 },
     { name: "gai", page: 510 },
     { name: "gan", page: 513 },
@@ -144,7 +145,7 @@ const BOOKMARKS = [
     { name: "gui", page: 583 },
     { name: "gun", page: 588 },
     { name: "guo", page: 589 },
-    { name: "h", page: 599 },
+    { name: "H", page: 599 },
     { name: "ha", page: 599 },
     { name: "hai", page: 600 },
     { name: "han", page: 604 },
@@ -166,7 +167,7 @@ const BOOKMARKS = [
     { name: "hui", page: 671 },
     { name: "hun", page: 681 },
     { name: "huo", page: 683 },
-    { name: "j", page: 692 },
+    { name: "J", page: 692 },
     { name: "ji", page: 692 },
     { name: "jia", page: 715 },
     { name: "jian", page: 724 },
@@ -181,7 +182,7 @@ const BOOKMARKS = [
     { name: "juan", page: 803 },
     { name: "jue", page: 805 },
     { name: "jun", page: 810 },
-    { name: "k", page: 814 },
+    { name: "K", page: 814 },
     { name: "ka", page: 814 },
     { name: "kai", page: 815 },
     { name: "kan", page: 821 },
@@ -201,7 +202,7 @@ const BOOKMARKS = [
     { name: "kui", page: 854 },
     { name: "kun", page: 859 },
     { name: "kuo", page: 860 },
-    { name: "l", page: 862 },
+    { name: "L", page: 862 },
     { name: "la", page: 862 },
     { name: "lai", page: 866 },
     { name: "lan", page: 868 },
@@ -227,7 +228,7 @@ const BOOKMARKS = [
     { name: "lüe", page: 950 },
     { name: "lun", page: 951 },
     { name: "luo", page: 953 },
-    { name: "m", page: 959 },
+    { name: "M", page: 959 },
     { name: "ma", page: 959 },
     { name: "mai", page: 964 },
     { name: "man", page: 967 },
@@ -247,7 +248,7 @@ const BOOKMARKS = [
     { name: "mo", page: 1011 },
     { name: "mou", page: 1018 },
     { name: "mu", page: 1019 },
-    { name: "n", page: 1025 },
+    { name: "N", page: 1025 },
     { name: "na", page: 1025 },
     { name: "nai", page: 1028 },
     { name: "nan", page: 1029 },
@@ -272,10 +273,10 @@ const BOOKMARKS = [
     { name: "nüe", page: 1059 },
     { name: "nun", page: 1059 },
     { name: "nuo", page: 1059 },
-    { name: "o", page: 1061 },
+    { name: "O", page: 1061 },
     { name: "o", page: 1061 },
     { name: "ou", page: 1061 },
-    { name: "p", page: 1064 },
+    { name: "P", page: 1064 },
     { name: "pa", page: 1064 },
     { name: "pai", page: 1059 },
     { name: "pan", page: 1069 },
@@ -293,7 +294,7 @@ const BOOKMARKS = [
     { name: "po", page: 1105 },
     { name: "pou", page: 1108 },
     { name: "pu", page: 1109 },
-    { name: "q", page: 1114 },
+    { name: "Q", page: 1114 },
     { name: "qi", page: 1114 },
     { name: "qia", page: 1129 },
     { name: "qian", page: 1130 },
@@ -308,7 +309,7 @@ const BOOKMARKS = [
     { name: "quan", page: 1175 },
     { name: "que", page: 1180 },
     { name: "qun", page: 1182 },
-    { name: "r", page: 1184 },
+    { name: "R", page: 1184 },
     { name: "ran", page: 1184 },
     { name: "rang", page: 1185 },
     { name: "rao", page: 1186 },
@@ -323,7 +324,7 @@ const BOOKMARKS = [
     { name: "rui", page: 1210 },
     { name: "run", page: 1211 },
     { name: "ruo", page: 1211 },
-    { name: "s", page: 1213 },
+    { name: "S", page: 1213 },
     { name: "sa", page: 1213 },
     { name: "sai", page: 1214 },
     { name: "san", page: 1215 },
@@ -359,7 +360,7 @@ const BOOKMARKS = [
     { name: "sui", page: 1346 },
     { name: "sun", page: 1348 },
     { name: "suo", page: 1350 },
-    { name: "t", page: 1353 },
+    { name: "T", page: 1353 },
     { name: "ta", page: 1353 },
     { name: "tai", page: 1355 },
     { name: "tan", page: 1360 },
@@ -380,7 +381,7 @@ const BOOKMARKS = [
     { name: "tui", page: 1424 },
     { name: "tun", page: 1427 },
     { name: "tuo", page: 1428 },
-    { name: "w", page: 1434 },
+    { name: "W", page: 1434 },
     { name: "wa", page: 1434 },
     { name: "wai", page: 1435 },
     { name: "wan", page: 1440 },
@@ -390,7 +391,7 @@ const BOOKMARKS = [
     { name: "weng", page: 1470 },
     { name: "wo", page: 1471 },
     { name: "wu", page: 1472 },
-    { name: "x", page: 1490 },
+    { name: "X", page: 1490 },
     { name: "xi", page: 1490 },
     { name: "xia", page: 1503 },
     { name: "xian", page: 1513 },
@@ -405,7 +406,7 @@ const BOOKMARKS = [
     { name: "xuan", page: 1576 },
     { name: "xue", page: 1581 },
     { name: "xun", page: 1586 },
-    { name: "y", page: 1591 },
+    { name: "Y", page: 1591 },
     { name: "ya", page: 1591 },
     { name: "yan", page: 1596 },
     { name: "yang", page: 1608 },
@@ -421,7 +422,7 @@ const BOOKMARKS = [
     { name: "yuan", page: 1701 },
     { name: "yue", page: 1710 },
     { name: "yun", page: 1714 },
-    { name: "z", page: 1720 },
+    { name: "Z", page: 1720 },
     { name: "za", page: 1720 },
     { name: "zai", page: 1721 },
     { name: "zan", page: 1724 },
@@ -475,10 +476,12 @@ function sanitizePinyin(str) {
         .toLowerCase()                      // 转小写
         .replace(/\s+$/g, '')               // 去除结尾空格
         .replace(/[0-9]+$/g, '')            // 去除结尾数字
-
+    if (str2 == "ei") {
+        return "ê";
+    }
     return str2.normalize('NFKD')
         .replace(/[\u0300-\u036F]/g, '')  // 移除声调符号
-        .replace(/v/g, 'ü')       // 把 ü 替换成 u
+        .replace(/v/g, 'ü')       // 把 v 换成 ü
 }
 
 function isNumeric(str) {
@@ -567,3 +570,111 @@ document.addEventListener('DOMContentLoaded', function () {
     showImage()
 });
 
+// 侧边栏导航
+document.addEventListener('DOMContentLoaded', function () {
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+    const bookmarksList = document.getElementById('bookmarksList');
+
+    const groupedBookmarks = {};
+    const singleBookmarks = [];
+    const showNames = ["目录",
+        "音节表",
+        "部首检字表",
+        "检字表",
+        "西文字母开头的词语",
+        "附录"
+    ]
+
+    BOOKMARKS.forEach(bookmark => {
+        // Check if the name is a single character (Chinese character or letter)
+        const name = bookmark.name;
+        if (showNames.includes(name)) {
+            singleBookmarks.push(bookmark)
+        }
+        else if (/^[a-zA-Züê]+$/.test(name)) {
+            const firstChar = name == "ê" ? "e" : name.charAt(0).toLowerCase();
+            if (!groupedBookmarks[firstChar]) {
+                groupedBookmarks[firstChar] = [];
+            }
+            groupedBookmarks[firstChar].push(bookmark);
+        }
+    });
+
+    // Add single character bookmarks
+    singleBookmarks.forEach(bookmark => {
+        const bookmarkElement = createBookmarkElement(bookmark, false);
+        bookmarksList.appendChild(bookmarkElement);
+    });
+    // Create collapsible groups for multi-character bookmarks
+    Object.entries(groupedBookmarks).sort().forEach(([group, bookmarks]) => {
+        const groupElement = document.createElement('div');
+        groupElement.className = 'bookmark-group';
+
+        const groupHeader = document.createElement('div');
+        groupHeader.className = 'bookmark-group-header';
+        groupHeader.innerHTML = `<span>${group.toUpperCase()}</span>`;
+
+        const groupContent = document.createElement('div');
+        groupContent.className = 'bookmark-group-content';
+
+        bookmarks.forEach(bookmark => {
+            const bookmarkElement = createBookmarkElement(bookmark, true);
+            groupContent.appendChild(bookmarkElement);
+        });
+
+        groupHeader.addEventListener('click', () => {
+            groupElement.classList.toggle('expanded');
+            const icon = groupHeader.querySelector('i');
+            icon.style.transform = groupElement.classList.contains('expanded') ? 'rotate(180deg)' : 'rotate(0)';
+        });
+
+        groupElement.appendChild(groupHeader);
+        groupElement.appendChild(groupContent);
+        bookmarksList.appendChild(groupElement);
+    });
+
+    // Create bookmark element
+    function createBookmarkElement(bookmark, isPinyin) {
+        const bookmarkElement = document.createElement('div');
+        const actualPage = bookmark.page - pinyinIndex + 1;
+        bookmarkElement.className = 'bookmark-item';
+        bookmarkElement.innerHTML = `<span>${bookmark.name}</span>`;
+        if (isPinyin) {
+            bookmarkElement.innerHTML += `<span class="page-number">第 ${actualPage} 页</span>`;
+        }
+        bookmarkElement.onclick = (e) => {
+            if (e.target.closest('.bookmark-group-header')) return;
+            currentImageIndex = bookmark.page;
+            showImage();
+            closeSidebarHandler();
+        };
+        return bookmarkElement;
+    }
+
+    // Toggle sidebar
+    function toggleSidebar() {
+        sidebar.classList.toggle('active');
+        sidebarToggle.classList.toggle('active');
+        document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+
+        if (!sidebar.classList.contains('active')) {
+            document.querySelectorAll('.bookmark-group').forEach(group => {
+                group.classList.remove('expanded');
+            });
+        }
+    }
+
+    function closeSidebarHandler() {
+        sidebar.classList.remove('active');
+        sidebarToggle.classList.remove('active');
+        document.body.style.overflow = '';
+
+        // Close all groups
+        document.querySelectorAll('.bookmark-group').forEach(group => {
+            group.classList.remove('expanded');
+        });
+    }
+
+    sidebarToggle.addEventListener('click', toggleSidebar);
+});
