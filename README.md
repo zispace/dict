@@ -8,6 +8,7 @@
 - 文字版 <https://github.com/CNMan/XDHYCD7th>
 - Mdict
   - <https://forum.freemdict.com/t/topic/12102>
+  - <https://forum.freemdict.com/t/topic/25842>
   - <https://github.com/bamboo512/ModernChineseDict>
 
 ## 声明
