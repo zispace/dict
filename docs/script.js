@@ -24,7 +24,6 @@ const BOOKMARKS = [
     { name: "音节表", page: 26 },
     { name: "新旧字形对照表", page: 32 },
     { name: "部首检字表", page: 33 },
-    { name: "部首目录", page: 33 },
     { name: "检字表", page: 35 },
     { name: "难检字笔画索引", page: 90 },
     { name: "词典正文", page: 95 },
@@ -473,6 +472,42 @@ const BOOKMARKS = [
     { name: "封底", page: 1897 },
 ];
 
+const ALIAS = [
+    { name: "书名", page: 4 },
+    { name: "题签", page: 4 },
+    { name: "工作人员", page: 9 },
+    { name: "人员", page: 9 },
+    { name: "第7版", page: 11 },
+    { name: "第1版", page: 12 },
+    { name: "前言", page: 12 },
+    { name: "第2版", page: 14 },
+    { name: "第4版", page: 15 },
+    { name: "第5版", page: 16 },
+    { name: "第6版", page: 18 },
+    { name: "音节", page: 26 },
+    { name: "新旧字形", page: 32 },
+    { name: "字形", page: 32 },
+    { name: "部首", page: 33 },
+    { name: "检字表", page: 35 },
+    { name: "难检字", page: 90 },
+    { name: "笔画索引", page: 90 },
+    { name: "正文", page: 95 },
+    { name: "西文字母词语", page: 1855 },
+    { name: "西文字母", page: 1855 },
+    { name: "西文", page: 1855 },
+    { name: "字母", page: 1855 },
+    { name: "附录", page: 1861 },
+    { name: "纪元表", page: 1863 },
+    { name: "纪元", page: 1863 },
+    { name: "计量单位", page: 1880 },
+    { name: "计量", page: 1880 },
+    { name: "偏旁", page: 1888 },
+    { name: "拼音", page: 1891 },
+    { name: "元素", page: 1894 },
+    { name: "版权", page: 1895 },
+    { name: "地图", page: 1896 },
+];
+
 function sanitizePinyin(str) {
     const str2 = str
         .toLowerCase()                      // 转小写
@@ -519,8 +554,13 @@ function searchImage() {
 }
 
 function getPageNumberByName(name) {
-    const result = BOOKMARKS.find(item => item.name === name);
-    return result ? result.page : null;
+    const result = BOOKMARKS.find(item => item.name.toLowerCase() === name);
+    if (result) {
+        return result.page;
+    } else {
+        const result2 = ALIAS.find(item => item.name.toLowerCase() === name);
+        return result2 ? result2.page : null;
+    }
 }
 
 function showImage() {
