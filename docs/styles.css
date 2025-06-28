@@ -97,6 +97,13 @@ header h1 {
     background-color: var(--search-color);
 }
 
+.search-tip ul {
+    letter-spacing: 0.1rem;
+    font-size: larger;
+    font-family: monospace;
+    text-align: left;
+}
+
 /* Sidebar Styles */
 .sidebar {
     position: fixed;
