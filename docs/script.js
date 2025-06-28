@@ -1,5 +1,5 @@
 const pinyinIndex = 95;
-const pinyinMaxIndex = 1854;
+const pinyinMaxIndex = 1860;
 const ignoreMinPage = 5;
 const ignoreMaxPage = 1895;
 const totalImages = 1897; // Total number of images
@@ -24,8 +24,10 @@ const BOOKMARKS = [
     { name: "音节表", page: 26 },
     { name: "新旧字形对照表", page: 32 },
     { name: "部首检字表", page: 33 },
+    { name: "部首目录", page: 33 },
     { name: "检字表", page: 35 },
-    { name: "难检字笔画索引", page: 76 },
+    { name: "难检字笔画索引", page: 90 },
+    { name: "词典正文", page: 95 },
     { name: "A", page: 95 },
     { name: "a", page: 95 },
     { name: "ai", page: 96 },
@@ -503,15 +505,15 @@ function searchImage() {
         }
     } else {
         const pinyin = sanitizePinyin(searchInput);
-        pageNumber = getPageNumberByName(pinyin);
+        pageNumber = pinyin === "" ? pinyinIndex : getPageNumberByName(pinyin);
     }
 
-    if (pageNumber !== null && pageNumber > 0 && pageNumber <= totalImages) {
+    if (pageNumber !== null && pageNumber >= 1 && pageNumber <= totalImages) {
         document.getElementById("search-result").innerHTML = "";
         currentImageIndex = pageNumber;
         showImage();
     } else {
-        document.getElementById("search-result").innerHTML = "检索的拼音或正文页码无效，请重新输入!";
+        document.getElementById("search-result").innerHTML = `检索的拼音或正文页码（1～1766）无效，请重新输入!`;
         // alert("请输入一个有效的拼音或正文页码!");
     }
 }
@@ -632,8 +634,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         groupHeader.addEventListener('click', () => {
             groupElement.classList.toggle('expanded');
-            const icon = groupHeader.querySelector('i');
-            icon.style.transform = groupElement.classList.contains('expanded') ? 'rotate(180deg)' : 'rotate(0)';
         });
 
         groupElement.appendChild(groupHeader);
