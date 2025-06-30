@@ -8,11 +8,11 @@
 }
 
 :root {
-    --background-color: #ffffff;
-    --text-color: #333333;
+    --background-color: #FDFCF8;
+    --text-color: #2B2B2B;
     --header-color: #EC0015;
     --search-color: #F76F43;
-    --border-color: #ccc;
+    --border-color: #CCC;
     --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -20,22 +20,28 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #121212;
-        --text-color: #e0e0e0;
-        --header-color: #ff3a3a;
-        --search-color: #ff9a7a;
+        --text-color: #F0F0F0;
+        --header-color: #FF4B55;
+        --search-color: #FF8A5C;
         --border-color: #444;
         --shadow-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #main-image[src*="images/"] {
+        filter: invert(90%);
+        transition: filter 0.3s ease;
     }
 }
 
 body {
     font-family: "ZSFT-ec", "Times New Roman", "NanoOldSong-A", serif;
-
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     height: 100vh;
+    background: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
@@ -66,6 +72,7 @@ header h1 {
 .search-box {
     display: flex;
     width: 100%;
+    min-height: 2rem;
     max-width: 500px;
     border: 2px solid var(--border-color);
     border-radius: 8px;
@@ -85,6 +92,13 @@ header h1 {
     border: none;
     outline: none;
     padding: 8px;
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    font-family: "ZSFT-ec", "Times New Roman", "NanoOldSong-A", serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .search-button {
@@ -93,14 +107,6 @@ header h1 {
     cursor: pointer;
     padding: 0 12px;
     height: 100%;
-}
-
-.search-input {
-    flex: 1;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    font-family: "ZSFT-ec", "Times New Roman", "NanoOldSong-A", serif;
 }
 
 .search-box button {
@@ -300,7 +306,9 @@ header h1 {
         width: 95%;
         max-width: 95%;
     }
-    .sidebar-header h3, .sidebar-content {
+
+    .sidebar-header h3,
+    .sidebar-content {
         font-size: smaller;
     }
 }
