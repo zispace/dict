@@ -162,7 +162,8 @@ function changeImage(offset) {
 
 async function setupBookmarks(bookmarksList) {
     const sidebarToggle = document.getElementById('sidebarToggle');
-    const sidebar = document.getElementById('sidebar');
+    const sidebarPopup = document.getElementById('sidebarPopup');
+    const closeSidebarPopup = document.getElementById('closeSidebarPopup');
 
     // 侧边栏导航
     const showNames = [
@@ -259,11 +260,11 @@ async function setupBookmarks(bookmarksList) {
 
     // Toggle sidebar
     function toggleSidebar() {
-        sidebar.classList.toggle('active');
+        sidebarPopup.classList.toggle('active');
         sidebarToggle.classList.toggle('active');
-        document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+        document.body.style.overflow = sidebarPopup.classList.contains('active') ? 'hidden' : '';
 
-        if (!sidebar.classList.contains('active')) {
+        if (!sidebarPopup.classList.contains('active')) {
             document.querySelectorAll('.bookmark-group').forEach(group => {
                 group.classList.remove('expanded');
             });
@@ -271,7 +272,7 @@ async function setupBookmarks(bookmarksList) {
     }
 
     function closeSidebarHandler() {
-        sidebar.classList.remove('active');
+        sidebarPopup.classList.remove('active');
         sidebarToggle.classList.remove('active');
         document.body.style.overflow = '';
 
@@ -282,7 +283,34 @@ async function setupBookmarks(bookmarksList) {
     }
     // 侧边栏
     sidebarToggle.addEventListener('click', toggleSidebar);
+    closeSidebarPopup.addEventListener('click', function () {
+        closeSidebarHandler();
+    });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tipToggle = document.getElementById('tipToggle');
+    const pinyinPopup = document.getElementById('pinyinPopup');
+    const closePopup = document.getElementById('closePopup');
+
+    // 显示弹窗
+    tipToggle.addEventListener('click', function () {
+        pinyinPopup.style.display = 'flex';
+    });
+
+    // 关闭弹窗
+    closePopup.addEventListener('click', function () {
+        pinyinPopup.style.display = 'none';
+    });
+
+    // 点击弹窗外部关闭
+    pinyinPopup.addEventListener('click', function (e) {
+        if (e.target === pinyinPopup) {
+            pinyinPopup.style.display = 'none';
+        }
+    });
+
+});
 
 document.addEventListener('DOMContentLoaded', async function () {
     const bookmarksList = document.getElementById('bookmarksList');
