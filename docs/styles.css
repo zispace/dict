@@ -91,6 +91,7 @@ header h1 {
     outline: none;
     padding: 0.8rem 1rem;
     color: var(--text-color);
+    background-color: color-mix(in srgb, var(--background-color) 80%, var(--border-color));
     font-size: 1rem;
     font-family: "ZSFT-ec", "Times New Roman", "NanoOldSong-A", serif;
 }
@@ -377,5 +378,9 @@ header h1 {
     .result-container {
         width: 95%;
         max-width: 95%;
+    }
+
+    .icon {
+        opacity: 0.1;
     }
 }
